@@ -15,18 +15,29 @@ class main {
             document.getElementById(`${namespace}multiplyNumberB`)
         ];
 
-        addInputs.forEach(input => input.addEventListener('change', event => this.addNumbersAndUpdateSum(addInputs)));
+        addInputs.forEach(input => input.addEventListener(
+            'change',
+            event => this.addNumbersAndUpdateSum(addInputs.map(this.getElementValueNumber)))
+        );
 
-        multiplyInputs.forEach(input => input.addEventListener('change', event => this.multiplyNumbersAndUpdateSum(multiplyInputs)));
+        multiplyInputs.forEach(input => input.addEventListener(
+            'change',
+            event => this.multiplyNumbersAndUpdateSum(multiplyInputs.map(this.getElementValueNumber)))
+        );
     }
 
     addNumbersAndUpdateSum(inputs) {
-        this.sumResult.value = add(parseInt(inputs[0].value), parseInt(inputs[1].value));
+        this.sumResult.value = add(...inputs);
+    }
+
+    getElementValueNumber(element) {
+        return parseInt(element.value);
     }
 
     multiplyNumbersAndUpdateSum(inputs) {
-        this.multiplyResult.value = multiply(parseInt(inputs[0].value), parseInt(inputs[1].value));
+        this.multiplyResult.value = multiply(...inputs);
     }
+
 }
 
 export default main;
