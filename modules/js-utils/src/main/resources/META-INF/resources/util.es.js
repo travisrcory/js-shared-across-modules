@@ -1,5 +1,5 @@
-const multiply = (a, b) => a * b;
+const multiply = (array) => array.reduce((accumulator, currentValue) => accumulator * currentValue);
 
-const add = (a, b) => a + b;
+const add = (array) => array.reduce((accumulator, currentValue) => accumulator + currentValue);
 
 export {add, multiply};
