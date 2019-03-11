@@ -1,0 +1,10 @@
+Bundle-Name: import-js-utils-portlet-project
+Bundle-SymbolicName: com.liferay.imports.js.utils
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.imports.js.utils.constants
+Web-ContextPath: /import-js-utils-portlet-project
+-includeresource: package.json
+Require-Capability:\
+  soy;\
+    type="js-utils";\
+    version:Version="1.0.0"
