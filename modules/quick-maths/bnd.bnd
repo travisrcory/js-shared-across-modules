@@ -1,5 +1,5 @@
-Bundle-Name: quick-maths
-Bundle-SymbolicName: com.liferay.imports.js.utils
+Bundle-Name: Quick Maths
+Bundle-SymbolicName: quick-maths
 Bundle-Version: 1.0.0
 Export-Package: com.liferay.imports.js.utils.constants
 Web-ContextPath: /quick-maths
