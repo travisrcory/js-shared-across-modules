@@ -21,11 +21,11 @@ class main {
     }
 
     addNumbersAndUpdateSum(inputs) {
-        this.sumResult.value = add([parseInt(inputs[0].value), parseInt(inputs[1].value)]);
+        this.sumResult.value = add(parseInt(inputs[0].value), parseInt(inputs[1].value));
     }
 
     multiplyNumbersAndUpdateSum(inputs) {
-        this.multiplyResult.value = multiply([parseInt(inputs[0].value), parseInt(inputs[1].value)]);
+        this.multiplyResult.value = multiply(parseInt(inputs[0].value), parseInt(inputs[1].value));
     }
 }
 
