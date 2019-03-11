@@ -1,6 +1,4 @@
-package com.liferay.imports.js.utils.portlet;
-
-import com.liferay.imports.js.utils.constants.MyMvcPortletKeys;
+package com.liferay.quick.maths.portlet;
 
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
 
@@ -18,11 +16,12 @@ import org.osgi.service.component.annotations.Component;
 		"com.liferay.portlet.instanceable=true",
 		"javax.portlet.init-param.template-path=/",
 		"javax.portlet.init-param.view-template=/view.jsp",
-		"javax.portlet.name=" + MyMvcPortletKeys.MyMvc,
+		"javax.portlet.display-name=Quick Maths",
+		"javax.portlet.name=Quick Maths",
 		"javax.portlet.resource-bundle=content.Language",
 		"javax.portlet.security-role-ref=power-user,user"
 	},
 	service = Portlet.class
 )
-public class MyMvcPortlet extends MVCPortlet {
+public class QuickMathsPortlet extends MVCPortlet {
 }
