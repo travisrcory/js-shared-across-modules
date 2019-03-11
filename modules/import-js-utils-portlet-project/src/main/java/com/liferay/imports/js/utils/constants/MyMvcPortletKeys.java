@@ -5,6 +5,6 @@ package com.liferay.imports.js.utils.constants;
  */
 public class MyMvcPortletKeys {
 
-	public static final String MyMvc = "mymvc";
+	public static final String MyMvc = "Quick Maths";
 
 }
