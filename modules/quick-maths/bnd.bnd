@@ -1,8 +1,8 @@
-Bundle-Name: import-js-utils-portlet-project
+Bundle-Name: quick-maths
 Bundle-SymbolicName: com.liferay.imports.js.utils
 Bundle-Version: 1.0.0
 Export-Package: com.liferay.imports.js.utils.constants
-Web-ContextPath: /import-js-utils-portlet-project
+Web-ContextPath: /quick-maths
 -includeresource: package.json
 Require-Capability:\
   soy;\

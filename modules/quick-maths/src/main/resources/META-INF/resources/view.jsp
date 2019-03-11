@@ -44,6 +44,6 @@
 	</div>
 </div>
 
-<aui:script require="import-js-utils-portlet-project@1.0.0/js/main.es as main">
+<aui:script require="quick-maths@1.0.0/js/main.es as main">
     var mainJS = new main.default('<portlet:namespace />');
 </aui:script>
